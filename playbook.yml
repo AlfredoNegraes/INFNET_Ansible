@@ -1,0 +1,10 @@
+---
+  - hosts: docker
+    remote_user: administrador
+    become: yes
+    vars:
+    - ansible_sudo_pass: administrador
+    roles:
+      - docker
+      - postgresql
+      - odoo
