@@ -1,0 +1,8 @@
+---
+  - hosts: Ubuntu-Cockpit
+    remote_user: administrador
+    become: yes
+    vars:
+    - ansible_sudo_pass: administrador
+    roles:
+      - cockpit

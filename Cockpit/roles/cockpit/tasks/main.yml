@@ -1,0 +1,12 @@
+---
+# tasks file for cockpit
+  - name: Adicionar Repositorio
+    apt_repository:
+      repo: "ppa:cockpit-project/cockpit"
+      state: present     
+
+  - name: Instalar
+    apt:
+      name: 
+      - cockpit
+      state: latest 
